@@ -64,6 +64,54 @@ If nothing matches, the response is `{"recommendations": []}`.
 
 The recommendation implementation is owned by Kavin and is intentionally not included in this feature branch. During integration, the API expects `app.services.recommender.recommend_movies(favorite_genres)`. Until that service is available, a valid request returns `503 Service Unavailable`; the endpoint contract is tested with a dependency override.
 
+## Chatbot contract draft
+
+> **Draft — not yet an endpoint.** These schemas live in `app/schemas/chatbot.py`. No chatbot route, AI extraction or TMDB integration exists yet.
+>
+> **`MovieClues` must be confirmed with Kavin before AI or TMDB integration begins.** It is the hand-off between the AI extraction service and the TMDB service.
+
+Chatbot request (`ChatbotRequest`). `message` is required, must be a string, is trimmed, and cannot be blank:
+
+```json
+{
+  "message": "A movie set in space where a father leaves his daughter for a mission."
+}
+```
+
+Structured clues (`MovieClues`). All three fields are required and no others are allowed, so incomplete or malformed AI output is rejected before TMDB is called. `possible_title` must be present as a non-empty string or `null`. `genres` and `keywords` must be present as lists of non-empty strings, and may be empty (`[]`):
+
+```json
+{
+  "possible_title": null,
+  "genres": ["Sci-Fi", "Drama"],
+  "keywords": ["space", "father", "daughter", "time dilation"]
+}
+```
+
+Chatbot response (`ChatbotResponse` containing `MovieMatch` items). `poster_url` and `rating` may be `null`, `confidence` is between 0.0 and 1.0, and `best_match` is `null` when nothing matches. `alternatives` is always a list:
+
+```json
+{
+  "best_match": {
+    "title": "Interstellar",
+    "overview": "...",
+    "poster_url": "https://image.tmdb.org/example.jpg",
+    "rating": 8.5,
+    "confidence": 0.93
+  },
+  "alternatives": []
+}
+```
+
+No-match response:
+
+```json
+{
+  "best_match": null,
+  "alternatives": []
+}
+```
+
 ## Running tests
 
 From the repository root:
