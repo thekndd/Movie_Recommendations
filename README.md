@@ -8,7 +8,7 @@ app/
   main.py                  # FastAPI application
   routers/recommendations.py  # POST /recommendations route
   schemas/recommendation.py   # Pydantic request/response models
-  services/recommender.py     # recommend_movies() (recommendation logic)
+  services/recommender.py     # Added by Kavin during integration
 tests/
   test_api.py              # Endpoint tests (recommender is mocked)
 ```
@@ -61,6 +61,8 @@ Response (`200 OK`):
 If nothing matches, the response is `{"recommendations": []}`.
 
 `favorite_genres` must be present, be a non-empty list, and contain only non-empty strings. Otherwise the API returns `422 Unprocessable Entity`.
+
+The recommendation implementation is owned by Kavin and is intentionally not included in this feature branch. During integration, the API expects `app.services.recommender.recommend_movies(favorite_genres)`. Until that service is available, a valid request returns `503 Service Unavailable`; the endpoint contract is tested with a dependency override.
 
 ## Running tests
 
