@@ -79,16 +79,10 @@ def recommend_movies(favorite_genres: list[str], movies: list[dict] | None = Non
             If omitted, loads from DEFAULT_CATALOGUE_PATH.
 
     Returns:
-        A list of full movie records (a copy of each catalogue entry,
-        e.g. title, release_year, genres, cast, description — whatever
-        fields movies.json carries), ordered by number of matching
-        genres (descending), with no duplicate titles. Empty list if
-        nothing matches.
-
-        NOTE: this returns the whole record, not just {"title", "genre"}.
-        That's a change to the originally agreed /recommendations
-        response shape — confirm with Janindu before he wires the
-        router's response model to this.
+        A list of {"title": ..., "genres": ...} dicts only (no
+        release_year, cast, description, etc.), ordered by number of
+        matching genres (descending), with no duplicate titles. Empty
+        list if nothing matches.
 
     Raises:
         InvalidGenreInput: if favorite_genres is missing, empty,
@@ -116,8 +110,7 @@ def recommend_movies(favorite_genres: list[str], movies: list[dict] | None = Non
         if movie["title"] in seen_titles:
             continue
         seen_titles.add(movie["title"])
-        # Return a copy of the full record, not just title/genre,
-        # so callers can't accidentally mutate the loaded catalogue.
-        results.append(dict(movie))
+        # Only expose title + genres, not the full catalogue record.
+        results.append({"title": movie["title"], "genres": movie["genres"]})
 
     return results

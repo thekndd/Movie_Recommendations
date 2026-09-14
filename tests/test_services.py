@@ -7,6 +7,7 @@ Covers the test cases assigned to Kavin in the acceptance plan:
   - Lowercase input matches
   - Unknown genre -> empty list
   - Duplicate input genres -> no duplicate movies
+  - Result records only contain title + genres
   - (Empty list / missing field validation is Janindu's endpoint-level test,
     but we test that recommend_movies() raises correctly here too.)
 
@@ -67,7 +68,7 @@ def test_normalize_genre_strips_and_lowercases():
     assert normalize_genre("  Sci-Fi ") == "sci-fi"
 
 
-def test_returns_full_movie_record_not_just_title_and_genre():
+def test_returns_only_title_and_genres():
     movies_with_extra_fields = [
         {
             "title": "The Matrix",
@@ -78,8 +79,5 @@ def test_returns_full_movie_record_not_just_title_and_genre():
         },
     ]
     result = recommend_movies(["Action"], movies=movies_with_extra_fields)
-    assert result[0]["title"] == "The Matrix"
-    assert result[0]["release_year"] == 1999
-    assert result[0]["cast"] == ["Keanu Reeves"]
-    assert result[0]["description"] == "A hacker discovers the truth."
-    assert result[0]["genres"] == ["Action", "Sci-Fi"]
+    assert result[0] == {"title": "The Matrix", "genres": ["Action", "Sci-Fi"]}
+    assert set(result[0].keys()) == {"title", "genres"}
