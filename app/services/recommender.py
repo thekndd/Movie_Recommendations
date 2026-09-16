@@ -79,7 +79,7 @@ def recommend_movies(favorite_genres: list[str], movies: list[dict] | None = Non
             If omitted, loads from DEFAULT_CATALOGUE_PATH.
 
     Returns:
-        A list of {"title": ..., "genres": ...} dicts only (no
+        A list of {"title": ..., "genre": ...} dicts only (no
         release_year, cast, description, etc.), ordered by number of
         matching genres (descending), with no duplicate titles. Empty
         list if nothing matches.
@@ -110,7 +110,10 @@ def recommend_movies(favorite_genres: list[str], movies: list[dict] | None = Non
         if movie["title"] in seen_titles:
             continue
         seen_titles.add(movie["title"])
-        # Only expose title + genres, not the full catalogue record.
-        results.append({"title": movie["title"], "genres": movie["genres"]})
+        # Only expose title + genre, not the full catalogue record.
+        results.append({
+            "title": movie["title"],
+            "genre": ", ".join(movie["genres"]),
+        })
 
     return results
