@@ -1,0 +1,142 @@
+[
+  {
+    "title": "The Matrix",
+    "release_year": 1999,
+    "genres": ["Action", "Sci-Fi"],
+    "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+  },
+  {
+    "title": "Inception",
+    "release_year": 2010,
+    "genres": ["Action", "Sci-Fi", "Thriller"],
+    "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O."
+  },
+  {
+    "title": "Parasite",
+    "release_year": 2019,
+    "genres": ["Comedy", "Drama", "Thriller"],
+    "cast": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
+    "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan."
+  },
+  {
+    "title": "Spirited Away",
+    "release_year": 2001,
+    "genres": ["Animation", "Adventure", "Fantasy"],
+    "cast": ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"],
+    "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, where humans are changed into beasts."
+  },
+  {
+    "title": "Knives Out",
+    "release_year": 2019,
+    "genres": ["Comedy", "Crime", "Mystery"],
+    "cast": ["Daniel Craig", "Chris Evans", "Ana de Armas"],
+    "description": "A detective investigates the death of a patriarch of an eccentric, combative family."
+  },
+  {
+    "title": "Jurassic Park",
+    "release_year": 1993,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "cast": ["Sam Neill", "Laura Dern", "Jeff Goldblum"],
+    "description": "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose."
+  },
+  {
+    "title": "Get Out",
+    "release_year": 2017,
+    "genres": ["Horror", "Mystery", "Thriller"],
+    "cast": ["Daniel Kaluuya", "Allison Williams", "Bradley Whitford"],
+    "description": "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point."
+  },
+  {
+    "title": "The Dark Knight",
+    "release_year": 2008,
+    "genres": ["Action", "Crime", "Drama"],
+    "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+    "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+  },
+  {
+    "title": "Before Sunrise",
+    "release_year": 1995,
+    "genres": ["Drama", "Romance"],
+    "cast": ["Ethan Hawke", "Julie Delpy", "Andrea Eckert"],
+    "description": "A young man and woman meet on a train in Europe, and wind up spending one evening together in Vienna. Unfortunately, both know that this will probably be their only night together."
+  },
+  {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "release_year": 2018,
+    "genres": ["Animation", "Action", "Adventure"],
+    "cast": ["Shameik Moore", "Jake Johnson", "Hailee Steinfeld"],
+    "description": "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities."
+  },
+  {
+    "title": "Dune",
+    "release_year": 2021,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "cast": ["Timothée Chalamet", "Rebecca Ferguson", "Zendaya"],
+    "description": "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future."
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "release_year": 2014,
+    "genres": ["Adventure", "Comedy", "Crime"],
+    "cast": ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric"],
+    "description": "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge."
+  },
+  {
+    "title": "Alien",
+    "release_year": 1979,
+    "genres": ["Horror", "Sci-Fi"],
+    "cast": ["Sigourney Weaver", "Tom Skerritt", "John Hurt"],
+    "description": "The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission."
+  },
+  {
+    "title": "Everything Everywhere All at Once",
+    "release_year": 2022,
+    "genres": ["Action", "Adventure", "Comedy"],
+    "cast": ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan"],
+    "description": "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led."
+  },
+  {
+    "title": "Pulp Fiction",
+    "release_year": 1994,
+    "genres": ["Crime", "Drama"],
+    "cast": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+    "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+  },
+  {
+    "title": "Toy Story",
+    "release_year": 1995,
+    "genres": ["Animation", "Adventure", "Comedy"],
+    "cast": ["Tom Hanks", "Tim Allen", "Don Rickles"],
+    "description": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room."
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "release_year": 2015,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "cast": ["Tom Hardy", "Charlize Theron", "Nicholas Hoult"],
+    "description": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max."
+  },
+  {
+    "title": "Forrest Gump",
+    "release_year": 1994,
+    "genres": ["Drama", "Romance"],
+    "cast": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+    "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart."
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "release_year": 2001,
+    "genres": ["Action", "Adventure", "Drama"],
+    "cast": ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
+    "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
+  },
+  {
+    "title": "Die Hard",
+    "release_year": 1988,
+    "genres": ["Action", "Thriller"],
+    "cast": ["Bruce Willis", "Alan Rickman", "Bonnie Bedelia"],
+    "description": "An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles."
+  }
+]
